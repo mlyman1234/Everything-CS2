@@ -1,0 +1,13 @@
+Adding Base Project Structure
+ 1) Creating the README for 
+the project (/README.md)
+ 2) Creating the code directory for 
+the project (/code/
+Adding Base Project
+ 1) Adding Eclipse project to 
+/code/
+2. Extract the zip 
+archive
+ 3. Copy the project 
+into the /code/ 
+directory.
