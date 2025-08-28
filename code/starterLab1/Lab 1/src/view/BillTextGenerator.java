@@ -42,8 +42,8 @@ public class BillTextGenerator {
 
 		text += System.lineSeparator();
 		text += "SUBTOTAL - $" + subTotal + System.lineSeparator();
-		double tax = subTotal * 0.1;
-		double tip = subTotal * 0.2;
+		double tax = subTotal * Bill.TAX_PERCENT;
+		double tip = subTotal * Bill.TIP_PERCENT;
 		text += "TAX - $" + tax + System.lineSeparator();
 		text += "TIP - $" + tip + System.lineSeparator();
 		text += "TOTAL - $" + (subTotal + tax + tip);

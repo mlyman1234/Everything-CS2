@@ -1,3 +1,6 @@
 1) I made the bill list in the new BillTextGenerator class accessible in order to print from that class instad of the bill class.
 I created a getItem and getSize method to implement into the BillTextGenerator for it to function properly.
 I created a test method named TestBillTextGenerator in order to check if it works.
+
+2) I created two constants being tax percent and tip percent in the bill class for future use and for the
+getText method in the BillTextGenerator Class. TAX_PERCENT is set to 0.1 and TIP_Percent is set to 0.2
