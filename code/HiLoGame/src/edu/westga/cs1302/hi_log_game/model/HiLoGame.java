@@ -32,7 +32,7 @@ public class HiLoGame {
 	}
 	
 	/** Initialize a new HiLoGame
-	 * 
+	 *  
 	 * @precondition none
 	 * @postcondition getGuessCount() == 0 && getTargetNumber() == 0
 	 * 

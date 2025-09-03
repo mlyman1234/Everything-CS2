@@ -1,0 +1,37 @@
+commit c0e5567cb1f965ec30312979956a251f0a884021
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Thu Aug 28 08:54:58 2025 -0400
+
+    2) I created two constants being tax percent and tip percent in the bill class for future use and for the
+    getText method in the BillTextGenerator Class. TAX_PERCENT is set to 0.1 and TIP_Percent is set to 0.2
+
+commit 42238729754553fa28b6a1741832046c54702f94
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Thu Aug 28 08:47:30 2025 -0400
+
+    [200~1) I made the bill list in the new BillTextGenerator class accessible in order to print from that class instad of the bill class.
+    I created a getItem and getSize method to implement into the BillTextGenerator for it to function properly.
+    I created a test method named TestBillTextGenerator in order to check if it works.
+
+commit b1074d561c17b00022ef2ae1a5c9e9b0c373cbb1
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Thu Aug 21 10:35:47 2025 -0400
+
+    Adding Base Project
+    1) Adding Eclipse project to /code/
+    2) Extract the zip archive
+    3) Copy the project into the /code/ directory.
+
+commit 791c14895c2494f8f50c61399d095cf9beb14dd2
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Thu Aug 21 10:22:49 2025 -0400
+
+    Adding Base Project Strucure
+    > 1) Creating the README for the project (/README.md)
+    > 2) Creating the code directory for the project (/code/)
+
+commit 7ca72a9e03d2dcf789144528f27708a6325ccaa4
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Tue Aug 19 10:04:40 2025 -0400
+
+    Initial commit
