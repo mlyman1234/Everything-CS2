@@ -1,4 +1,4 @@
-package edu.westga.cs1302.lab2.tests.model.view.bill_view;
+package edu.westga.cs1302.lab3.tests.model.view.bill_view;
 
 import static org.junit.Assert.assertEquals;
 

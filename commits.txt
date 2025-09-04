@@ -1,3 +1,11 @@
+commit 3118929d3fd16d76b1062a21c153d9bd45ad1a0a
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Thu Sep 4 00:00:09 2025 -0400
+
+    Testing getText method in BillView Class
+    1) Created testWhenThereIsOnlyOneItemInBill test case
+    2) Created testWhenThereIsMulitipleItemsInBill test case
+
 commit 41e3f5707c9b806633b2763e460b55da1bc49519
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Wed Sep 3 23:06:49 2025 -0400
