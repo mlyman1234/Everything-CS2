@@ -1,3 +1,10 @@
+commit 0401f4dc3a23a84c457286e9b62121cb9532f4b5
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Wed Sep 3 17:39:52 2025 -0400
+
+    Testing Add Bill Item in Bill Class
+    1) Created TestWhenNull test case to TestAddBillItem
+
 commit c0e5567cb1f965ec30312979956a251f0a884021
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Thu Aug 28 08:54:58 2025 -0400

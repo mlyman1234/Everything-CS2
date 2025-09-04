@@ -4,6 +4,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
+/** Tests the generated text from BillView class
+ * 
+ * @author CS 1302
+ * @version Fall 2025
+ */
 public class TestGetText {
 	
 }
