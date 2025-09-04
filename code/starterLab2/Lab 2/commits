@@ -1,2 +1,12 @@
 Testing Add Bill Item in Bill Class
 1) Created TestWhenNull test case to TestAddBillItem
+
+Testing Bill Item Constructor in BillItem Class
+1) Created TestWhenNameIsNull test case
+2) Created TestWhenAmountIsOneBelowBoundary test case
+3) Created TestWhenAmountIsAtBoundary test case
+4) Created TestWhenAmountIsOneAboveBoundary test case
+
+Testing getText method in BillView Class
+1) Created testWhenThereIsOnlyOneItemInBill test case
+2) Created testWhenThereIsMulitipleItemsInBill test case

@@ -34,7 +34,7 @@ public class TestConstructor {
 	 * 
 	 */
 	@Test
-	public void testWhenAmmountIsOneBelowBoundary() {
+	public void testWhenAmountIsOneBelowBoundary() {
 		assertThrows(IllegalArgumentException.class, () -> {
 			new BillItem("crackers", -1);
 		});
@@ -47,7 +47,7 @@ public class TestConstructor {
 	 * 
 	 */
 	@Test
-	public void testWhenAmmountIsAtBoundary() {
+	public void testWhenAmountIsAtBoundary() {
 		assertThrows(IllegalArgumentException.class, () -> {
 			new BillItem("crackers", 0);
 		});
@@ -60,7 +60,7 @@ public class TestConstructor {
 	 * 
 	 */
 	@Test
-	public void testWhenAmmountIsOneAboveBoundary() {
+	public void testWhenAmountIsOneAboveBoundary() {
 		BillItem item = new BillItem("crackers", 1);
 		var name = item.getName();
 		var amount = item.getAmount();
