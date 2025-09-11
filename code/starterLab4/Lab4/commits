@@ -1,3 +1,8 @@
+Created taxCalculator method
+
+1) Created taxCalculator method and implemented it into BillView class.
+2) Changed local variable subtotal in subTotalCalculator method from int to double.
+
 Creating the BillCalculator class, creating final fields and implementing subTotal method
 
 1) BillItems fields name and amount were changed to be final so they can no longer be changed.

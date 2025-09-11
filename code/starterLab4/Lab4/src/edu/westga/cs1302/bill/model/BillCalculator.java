@@ -5,10 +5,16 @@ public class BillCalculator {
 	
 	
 	public static double subtotalCalculator(Bill bill) {
-		int subtotal = 0;
+		double subtotal = 0;
 		for (BillItem item : bill.getItems()) {
 			subtotal += item.getAmount();
 		}
 		return subtotal;
+	}
+	
+	public static double taxCalculator(Bill bill) {
+		double tax = 0;
+		tax = BillCalculator.subtotalCalculator(bill) * Bill.TAX_RATE;
+		return tax;
 	}
 }
