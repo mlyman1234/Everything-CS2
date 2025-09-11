@@ -1,0 +1,5 @@
+Designing and Implementing a GUI for the Bill System
+
+1) Integrated the Bill code from Lab2 into JavaFX
+2) Designed GUI using Scene Builder by adding TextFields for the name and amount variables, and a TextArea for the BillView output.
+3) I added functionality to the GUI so that it can create a BillItem using the name and amount TextFields, add the BillItem to a list, then generate a string using the getText method from BillView and displaying it in the output TextArea.  
