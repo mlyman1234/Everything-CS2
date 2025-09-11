@@ -1,3 +1,23 @@
+commit a772df69f01d2fb26a3362306e5d475c1c70553d
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Wed Sep 10 21:08:07 2025 -0400
+
+    Designing and Implementing a GUI for the Bill System
+    
+    1) Integrated the Bill code from Lab2 into JavaFX
+    2) Designed GUI using Scene Builder by adding TextFields for the name and amount variables, and a TextArea for the BillView output.
+    3) I added functionality to the GUI so that it can create a BillItem using the name and amount TextFields, add the BillItem to a list, then generate a string using the getText method from BillView and displaying it in the output TextArea.
+
+commit 2ce41e1daa54e3bb1ebdb54648753c98ca721162
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Thu Sep 4 10:46:28 2025 -0400
+
+    Setting up JavaFx Lab3
+    
+    1) Added Bill model classes to JavaFx sample project
+    2) Renamed project and package
+    3) Did not fully integrate Bill tests, havn't imported JUnit
+
 commit 3118929d3fd16d76b1062a21c153d9bd45ad1a0a
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Thu Sep 4 00:00:09 2025 -0400

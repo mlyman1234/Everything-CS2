@@ -1,0 +1,6 @@
+Creating the BillCalculator class, creating final fields and implementing subTotal method
+
+1) BillItems fields name and amount were changed to be final so they can no longer be changed.
+2) Created a BillCalculator Class
+3) Created a method that calculates the subTotal of a given bill
+4) Implemented subTotal method into BillView
