@@ -1,3 +1,8 @@
+Created tipCalculator method
+
+1) Created tipCalculator method in BillCalculator class.
+2) Implemented it into the BillView class.
+
 Created taxCalculator method
 
 1) Created taxCalculator method and implemented it into BillView class.

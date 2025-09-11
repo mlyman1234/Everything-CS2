@@ -17,4 +17,11 @@ public class BillCalculator {
 		tax = BillCalculator.subtotalCalculator(bill) * Bill.TAX_RATE;
 		return tax;
 	}
+	
+	public static double tipCalculator(Bill bill) {
+		double tax = 0;
+		tax = BillCalculator.subtotalCalculator(bill) * Bill.TIP_RATE;
+		return tax;
+	}
+	
 }

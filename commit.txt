@@ -1,3 +1,12 @@
+commit e47327b79459f8167a79544a2e43037a121c03c1
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Thu Sep 11 12:24:24 2025 -0400
+
+    Created taxCalculator method
+    
+    1) Created taxCalculator method and implemented it into BillView class.
+    2) Changed local variable subtotal in subTotalCalculator method from int to double.
+
 commit 2b5809558c46f101e22cb6997fba292c6edf3891
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Thu Sep 11 12:17:12 2025 -0400

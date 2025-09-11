@@ -31,7 +31,7 @@ public class BillView {
 		text += System.lineSeparator();
 		text += "SUBTOTAL - $" + subTotal + System.lineSeparator();
 		double tax = BillCalculator.taxCalculator(bill);
-		double tip = subTotal * Bill.TIP_RATE;
+		double tip = BillCalculator.tipCalculator(bill);
 		text += "TAX - $" + BillView.roundToNearestHundredth(tax) + System.lineSeparator();
 		text += "TIP - $" + BillView.roundToNearestHundredth(tip) + System.lineSeparator();
 		text += "TOTAL - $" + BillView.roundToNearestHundredth(subTotal + tip + tax);
