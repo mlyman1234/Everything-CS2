@@ -1,32 +1,3 @@
-commit 16405594a66b4d2da848a8edcb60c2c465758d49
-Author: mlyman1234 <mlyman1@my.westga.edu>
-Date:   Thu Sep 11 12:28:23 2025 -0400
-
-    Created tipCalculator method
-    
-    1) Created tipCalculator method in BillCalculator class.
-    2) Implemented it into the BillView class.
-
-commit e47327b79459f8167a79544a2e43037a121c03c1
-Author: mlyman1234 <mlyman1@my.westga.edu>
-Date:   Thu Sep 11 12:24:24 2025 -0400
-
-    Created taxCalculator method
-    
-    1) Created taxCalculator method and implemented it into BillView class.
-    2) Changed local variable subtotal in subTotalCalculator method from int to double.
-
-commit 2b5809558c46f101e22cb6997fba292c6edf3891
-Author: mlyman1234 <mlyman1@my.westga.edu>
-Date:   Thu Sep 11 12:17:12 2025 -0400
-
-    Creating the BillCalculator class, creating final fields and implementing subTotal method
-    
-    1) BillItems fields name and amount were changed to be final so they can no longer be changed.
-    2) Created a BillCalculator Class
-    3) Created a method that calculates the subTotal of a given bill
-    4) Implemented subTotal method into BillView
-
 commit a772df69f01d2fb26a3362306e5d475c1c70553d
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Wed Sep 10 21:08:07 2025 -0400
