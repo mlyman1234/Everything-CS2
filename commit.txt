@@ -1,3 +1,14 @@
+commit 3bc0df266c28897fd4d742c5a67e368a0fd13f7e
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Mon Sep 15 00:00:27 2025 -0400
+
+    Test Cases, BillCalculator Class, and BillView Class
+    
+    1) Changed the parameter of the Bill Calculator methods to Arrays
+    2) Created illegal argument exceptions for every method in the Bill Calculator class
+    3) Created test cases for every method inside of the Bill Calculator class including checking precondition and for general functionality.
+    4) Implemented a conversion of the parameter Bill in the getText method to an array in order adjust to the changes of the Bill Calculator methods.
+
 commit 16405594a66b4d2da848a8edcb60c2c465758d49
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Thu Sep 11 12:28:23 2025 -0400
