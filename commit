@@ -1,0 +1,136 @@
+commit afc1e2534e552eb230a8bdef797057be2f45c8d4
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Tue Sep 23 15:17:26 2025 -0400
+
+    A - UI for Adding Tasks
+    
+    1) Added label and textfield for entering a name for a new task.
+    2) Added label and textarea for entering a description for a new task.
+    3) Added label and combobox for entering the priority for the new task.
+    4) Added a button for submitting the information for a new task.
+    5) Added a listview to enable users to view and select a task from the list.
+    6) Associated fields and methods to the textfield, textarea, combobox, button and
+    listview in the MainWindow Class.
+
+commit 3bc0df266c28897fd4d742c5a67e368a0fd13f7e
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Mon Sep 15 00:00:27 2025 -0400
+
+    Test Cases, BillCalculator Class, and BillView Class
+    
+    1) Changed the parameter of the Bill Calculator methods to Arrays
+    2) Created illegal argument exceptions for every method in the Bill Calculator class
+    3) Created test cases for every method inside of the Bill Calculator class including checking precondition and for general functionality.
+    4) Implemented a conversion of the parameter Bill in the getText method to an array in order adjust to the changes of the Bill Calculator methods.
+
+commit 16405594a66b4d2da848a8edcb60c2c465758d49
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Thu Sep 11 12:28:23 2025 -0400
+
+    Created tipCalculator method
+    
+    1) Created tipCalculator method in BillCalculator class.
+    2) Implemented it into the BillView class.
+
+commit e47327b79459f8167a79544a2e43037a121c03c1
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Thu Sep 11 12:24:24 2025 -0400
+
+    Created taxCalculator method
+    
+    1) Created taxCalculator method and implemented it into BillView class.
+    2) Changed local variable subtotal in subTotalCalculator method from int to double.
+
+commit 2b5809558c46f101e22cb6997fba292c6edf3891
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Thu Sep 11 12:17:12 2025 -0400
+
+    Creating the BillCalculator class, creating final fields and implementing subTotal method
+    
+    1) BillItems fields name and amount were changed to be final so they can no longer be changed.
+    2) Created a BillCalculator Class
+    3) Created a method that calculates the subTotal of a given bill
+    4) Implemented subTotal method into BillView
+
+commit a772df69f01d2fb26a3362306e5d475c1c70553d
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Wed Sep 10 21:08:07 2025 -0400
+
+    Designing and Implementing a GUI for the Bill System
+    
+    1) Integrated the Bill code from Lab2 into JavaFX
+    2) Designed GUI using Scene Builder by adding TextFields for the name and amount variables, and a TextArea for the BillView output.
+    3) I added functionality to the GUI so that it can create a BillItem using the name and amount TextFields, add the BillItem to a list, then generate a string using the getText method from BillView and displaying it in the output TextArea.
+
+commit 2ce41e1daa54e3bb1ebdb54648753c98ca721162
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Thu Sep 4 10:46:28 2025 -0400
+
+    Setting up JavaFx Lab3
+    
+    1) Added Bill model classes to JavaFx sample project
+    2) Renamed project and package
+    3) Did not fully integrate Bill tests, havn't imported JUnit
+
+commit 3118929d3fd16d76b1062a21c153d9bd45ad1a0a
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Thu Sep 4 00:00:09 2025 -0400
+
+    Testing getText method in BillView Class
+    1) Created testWhenThereIsOnlyOneItemInBill test case
+    2) Created testWhenThereIsMulitipleItemsInBill test case
+
+commit 41e3f5707c9b806633b2763e460b55da1bc49519
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Wed Sep 3 23:06:49 2025 -0400
+
+    Testing Bill Item Constructor in BillItem Class
+    1) Created TestWhenNameIsNull test case
+    2) Created TestWhenAmountIsOneBelowBoundary test case
+    3) Created TestWhenAmountIsAtBoundary test case
+    4) Created TestWhenAmountIsOneAboveBoundary test case
+
+commit 0401f4dc3a23a84c457286e9b62121cb9532f4b5
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Wed Sep 3 17:39:52 2025 -0400
+
+    Testing Add Bill Item in Bill Class
+    1) Created TestWhenNull test case to TestAddBillItem
+
+commit c0e5567cb1f965ec30312979956a251f0a884021
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Thu Aug 28 08:54:58 2025 -0400
+
+    2) I created two constants being tax percent and tip percent in the bill class for future use and for the
+    getText method in the BillTextGenerator Class. TAX_PERCENT is set to 0.1 and TIP_Percent is set to 0.2
+
+commit 42238729754553fa28b6a1741832046c54702f94
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Thu Aug 28 08:47:30 2025 -0400
+
+    [200~1) I made the bill list in the new BillTextGenerator class accessible in order to print from that class instad of the bill class.
+    I created a getItem and getSize method to implement into the BillTextGenerator for it to function properly.
+    I created a test method named TestBillTextGenerator in order to check if it works.
+
+commit b1074d561c17b00022ef2ae1a5c9e9b0c373cbb1
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Thu Aug 21 10:35:47 2025 -0400
+
+    Adding Base Project
+    1) Adding Eclipse project to /code/
+    2) Extract the zip archive
+    3) Copy the project into the /code/ directory.
+
+commit 791c14895c2494f8f50c61399d095cf9beb14dd2
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Thu Aug 21 10:22:49 2025 -0400
+
+    Adding Base Project Strucure
+    > 1) Creating the README for the project (/README.md)
+    > 2) Creating the code directory for the project (/code/)
+
+commit 7ca72a9e03d2dcf789144528f27708a6325ccaa4
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Tue Aug 19 10:04:40 2025 -0400
+
+    Initial commit
