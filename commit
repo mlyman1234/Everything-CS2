@@ -1,3 +1,13 @@
+commit c4e3897ce2f88750bdf54d877081872655b8b7ab
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Tue Sep 23 16:41:57 2025 -0400
+
+    B – Business Logic for Storing a Task
+    
+    1) Created a data class named Task that stores the information for a single task such as name, description, and priority.
+    2) Created a constructor in the Task class along with getters for each field
+    3) Made name and priority into final fields so they couldn't be changed after being initialized.
+
 commit afc1e2534e552eb230a8bdef797057be2f45c8d4
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Tue Sep 23 15:17:26 2025 -0400
