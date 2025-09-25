@@ -22,5 +22,9 @@
       <ComboBox fx:id="taskPriority" prefWidth="150.0" />
       <Button mnemonicParsing="false" onAction="#submit" text="Button" />
       <ListView fx:id="selectTask" prefHeight="200.0" prefWidth="200.0" />
+      <Label text="Description Display" />
+      <TextArea fx:id="displayDescription" prefHeight="200.0" prefWidth="200.0" />
+      <Label text="Priority Display" />
+      <TextField fx:id="displayPriority" />
    </children>
 </VBox>

@@ -1,3 +1,12 @@
+commit ccd2747dcb8b39987e1ed799ea58ea7f253e6ee8
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Tue Sep 23 17:31:01 2025 -0400
+
+    Connect UI to Business Logic for Adding Task
+    
+    1) Initialized the priority combobox options (1-5)
+    2) Implemented the button method to add a task to the listview by using the name from the textfield, description from the textarea and priority from the combobox.
+
 commit c4e3897ce2f88750bdf54d877081872655b8b7ab
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Tue Sep 23 16:41:57 2025 -0400
