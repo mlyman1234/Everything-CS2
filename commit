@@ -1,3 +1,13 @@
+commit a4336aeef006300db5321c891153e4d7f22788d1
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Thu Sep 25 12:07:47 2025 -0400
+
+    A - UI for Adding Tasks
+    
+    1) Added a toString method in Task class to return the name of the task.
+    2) Added a description display for a selected task in the GUI, which comprises of a text area and label.
+    3) Added a priority display for a selected task in the GUI, which comprises of text field and label.
+
 commit ccd2747dcb8b39987e1ed799ea58ea7f253e6ee8
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Tue Sep 23 17:31:01 2025 -0400

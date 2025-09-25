@@ -21,10 +21,10 @@
       <Label text="Priority" />
       <ComboBox fx:id="taskPriority" prefWidth="150.0" />
       <Button mnemonicParsing="false" onAction="#submit" text="Button" />
-      <ListView fx:id="selectTask" prefHeight="200.0" prefWidth="200.0" />
+      <ListView fx:id="selectTask" onMouseClicked="#display" prefHeight="200.0" prefWidth="200.0" />
       <Label text="Description Display" />
-      <TextArea fx:id="displayDescription" prefHeight="200.0" prefWidth="200.0" />
+      <TextArea fx:id="displayDescription" editable="false" prefHeight="200.0" prefWidth="200.0" />
       <Label text="Priority Display" />
-      <TextField fx:id="displayPriority" />
+      <TextField fx:id="displayPriority" editable="false" />
    </children>
 </VBox>

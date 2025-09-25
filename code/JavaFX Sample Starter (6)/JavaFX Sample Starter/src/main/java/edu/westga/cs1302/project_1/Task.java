@@ -24,4 +24,8 @@ public class Task {
 		return priority;
 	}
 	
+	public String toString() {
+		return this.name;
+	}
+	
 }

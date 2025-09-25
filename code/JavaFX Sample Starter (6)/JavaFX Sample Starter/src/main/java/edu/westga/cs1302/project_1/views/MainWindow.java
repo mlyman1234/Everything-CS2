@@ -2,10 +2,13 @@ package edu.westga.cs1302.project_1.views;
 import javafx.fxml.FXML;
 import edu.westga.cs1302.project_1.Task;
 import javafx.event.ActionEvent;
+import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
+
 
 /**
  * Controller class for drawing various things to our canvas window.
@@ -20,6 +23,12 @@ public class MainWindow {
 
     @FXML
     private TextField name;
+    
+    @FXML
+    private TextArea displayDescription;
+
+    @FXML
+    private TextField displayPriority;
 
     @FXML
     private ListView<Task> selectTask;
@@ -34,6 +43,15 @@ public class MainWindow {
     	int priority = this.taskPriority.getValue();
     	Task task = new Task(taskName, taskDescription, priority);
     	this.selectTask.getItems().add(task);
+    }
+    
+    @FXML
+    void display(MouseEvent event) {
+    	Task task = this.selectTask.getSelectionModel().getSelectedItem();
+    	String dDescription = task.getDescription();
+    	int dPriority = task.getPriority();
+    	displayDescription.setText(dDescription);
+    	displayPriority.setText(dPriority + "");
     }
     
     /**

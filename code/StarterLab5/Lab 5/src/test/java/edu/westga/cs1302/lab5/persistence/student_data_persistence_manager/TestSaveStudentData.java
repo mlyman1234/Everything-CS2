@@ -21,8 +21,16 @@ class TestSaveStudentData {
 		assertFalse(reader.hasNextLine(), "checking if file is empty (should have no lines");
 		}
 	}
+	
+	@Test
+	void testNullArray() throws IllegalArgumentException, IOException {
+		assertThrows(IllegalArgumentException.class, -> () {
+			StudentDataPersistenceManager.saveStudentData(null, "test-data.txt");
+		});
+		
+	}
 
 }
 
 
-//no students, null array, null student, multiple null student, valid student, multiple valid students, identical student
+//no students, null array, null student, multiple null student, valid student, multiple valid students, id entical student
