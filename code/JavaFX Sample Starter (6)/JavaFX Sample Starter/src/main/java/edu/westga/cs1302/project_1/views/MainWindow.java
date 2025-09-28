@@ -53,7 +53,8 @@ public class MainWindow {
     
     @FXML
     void removeTask(ActionEvent event) {
-
+    	Task task = this.selectTask.getSelectionModel().getSelectedItem();
+    	this.selectTask.getItems().remove(task);
     }
     
     @FXML

@@ -1,3 +1,12 @@
+commit 0f86c0187e350dd3d8fbfba3123c72cb22815b10
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Sun Sep 28 10:54:09 2025 -0400
+
+    A – UI for Removing Task from the List
+    
+    1) Added a button (Remove Task) and an associated method called removeTask that will remove a task from the listview once implemented.
+    2) Changed the name of the submit button from Button to Add Task.
+
 commit 193fade8e8a3ceeccfdfcdc39db2f9b7f9f5e4c0
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Sun Sep 28 10:45:42 2025 -0400
