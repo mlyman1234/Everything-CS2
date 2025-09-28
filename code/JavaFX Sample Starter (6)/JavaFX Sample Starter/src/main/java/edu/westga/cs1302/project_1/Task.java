@@ -28,7 +28,7 @@ public class Task {
 		return this.name;
 	}
 	
-	public void setDescription(String description) {
+	public void updateDescription(String description) {
 		this.description = description;
 	}
 	

@@ -1,3 +1,12 @@
+commit 730cd0a47982358a8b90633963d4f207a8bc2fec
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Sun Sep 28 10:32:11 2025 -0400
+
+    A – Implementing UI
+    
+    1) I made the textarea for displaying the description editable.
+    2) Added an update button with an associated method in the MainWindow class.
+
 commit 59051c0730b5a8fda4f29920a1fda768e0346bf0
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Thu Sep 25 12:28:25 2025 -0400
