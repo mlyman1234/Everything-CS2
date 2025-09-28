@@ -20,7 +20,8 @@
       <TextArea fx:id="description" prefHeight="200.0" prefWidth="200.0" />
       <Label text="Priority" />
       <ComboBox fx:id="taskPriority" prefWidth="150.0" />
-      <Button mnemonicParsing="false" onAction="#submit" text="Button" />
+      <Button mnemonicParsing="false" onAction="#submit" text="Add Task" />
+      <Button mnemonicParsing="false" onAction="#removeTask" text="Remove Task" />
       <ListView fx:id="selectTask" onMouseClicked="#display" prefHeight="200.0" prefWidth="200.0" />
       <Button mnemonicParsing="false" onAction="#descriptionUpdate" text="Update" />
       <Label text="Description Display" />

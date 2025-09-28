@@ -1,3 +1,11 @@
+commit 193fade8e8a3ceeccfdfcdc39db2f9b7f9f5e4c0
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Sun Sep 28 10:45:42 2025 -0400
+
+    C – Connect Business Logic and UI for Updating Description of Task in the List
+    
+    1) Implemented a button that updates the currently selected task's description based on the display description.
+
 commit 6b1de63ad6774fae4bbd6c44b034d14e3a652497
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Sun Sep 28 10:37:04 2025 -0400

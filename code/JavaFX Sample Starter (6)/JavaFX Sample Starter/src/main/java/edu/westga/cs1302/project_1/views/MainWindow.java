@@ -52,6 +52,11 @@ public class MainWindow {
     }
     
     @FXML
+    void removeTask(ActionEvent event) {
+
+    }
+    
+    @FXML
     void display(MouseEvent event) {
     	Task task = this.selectTask.getSelectionModel().getSelectedItem();
     	String dDescription = task.getDescription();
