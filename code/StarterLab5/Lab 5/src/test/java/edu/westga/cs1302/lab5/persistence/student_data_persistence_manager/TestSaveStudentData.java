@@ -24,10 +24,20 @@ class TestSaveStudentData {
 	
 	@Test
 	void testNullArray() throws IllegalArgumentException, IOException {
-		assertThrows(IllegalArgumentException.class, -> () {
+		assertThrows(IllegalArgumentException.class, ()-> {
 			StudentDataPersistenceManager.saveStudentData(null, "test-data.txt");
 		});
 		
+	}
+	@Test
+	void testHasOnlyOneNullStudentsInArray() throws IllegalArgumentException, IOException {
+		Student[] classroom = new Student[1];
+		StudentDataPersistenceManager.saveStudentData(classroom, "test-data.txt");
+		classroom[0] = null;
+		File inputFile = new File("test-data.txt");
+		try(Scanner reader = new Scanner(inputFile)){
+		assertFalse(reader.hasNextLine(), "checking if file is empty (should have no lines");
+		}
 	}
 
 }

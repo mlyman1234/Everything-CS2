@@ -1,3 +1,11 @@
+commit 59051c0730b5a8fda4f29920a1fda768e0346bf0
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Thu Sep 25 12:28:25 2025 -0400
+
+    B – Connect UI to Business Logic for Adding Task
+    
+    1) Implemented a method that allows the user to see the description and priority of a task based on whichever one they selected from the list view. The description and priority are now read-only.
+
 commit a4336aeef006300db5321c891153e4d7f22788d1
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Thu Sep 25 12:07:47 2025 -0400

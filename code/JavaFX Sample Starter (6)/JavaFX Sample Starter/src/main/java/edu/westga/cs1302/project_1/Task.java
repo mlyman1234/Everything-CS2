@@ -28,4 +28,8 @@ public class Task {
 		return this.name;
 	}
 	
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	
 }

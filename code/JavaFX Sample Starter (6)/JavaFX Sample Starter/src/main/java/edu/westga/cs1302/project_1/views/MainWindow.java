@@ -35,6 +35,11 @@ public class MainWindow {
 
     @FXML
     private ComboBox<Integer> taskPriority;
+    
+    @FXML
+    void descriptionUpdate(ActionEvent event) {
+  
+    }
 
     @FXML
     void submit(ActionEvent event) {
