@@ -38,7 +38,8 @@ public class MainWindow {
     
     @FXML
     void descriptionUpdate(ActionEvent event) {
-  
+    	Task task = this.selectTask.getSelectionModel().getSelectedItem();
+    	task.updateDescription(displayDescription.getText());
     }
 
     @FXML

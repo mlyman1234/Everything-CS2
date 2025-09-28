@@ -1,3 +1,11 @@
+commit 6b1de63ad6774fae4bbd6c44b034d14e3a652497
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Sun Sep 28 10:37:04 2025 -0400
+
+    B – Business Logic for Updating Description of Task in the List
+    
+    1) Added a method in the Task class that allows a parameter to be passed to change the description of the task object.
+
 commit 730cd0a47982358a8b90633963d4f207a8bc2fec
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Sun Sep 28 10:32:11 2025 -0400
