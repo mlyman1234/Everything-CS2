@@ -1,3 +1,12 @@
+commit bebdfd1c253e3f25b1b1d664102e45bf1fa7b826
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Sun Sep 28 19:32:52 2025 -0400
+
+    A – Implementing UI
+    
+    1) Created 5 labels in the main window GUI and added a corresponding field for each in the Main Window class.
+    2) Created a button that could display the number of tasks for all priorities with an associated method in the main window class.
+
 commit d1371bd546f965cdadffbb3113b81dab0eab0f8d
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Sun Sep 28 11:02:33 2025 -0400

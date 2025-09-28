@@ -8,6 +8,7 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.control.Label;
 
 
 /**
@@ -29,6 +30,21 @@ public class MainWindow {
 
     @FXML
     private TextField displayPriority;
+    
+    @FXML
+    private Label priority1;
+
+    @FXML
+    private Label priority2;
+
+    @FXML
+    private Label priority3;
+
+    @FXML
+    private Label priority4;
+
+    @FXML
+    private Label priority5;
 
     @FXML
     private ListView<Task> selectTask;
@@ -64,6 +80,11 @@ public class MainWindow {
     	int dPriority = task.getPriority();
     	displayDescription.setText(dDescription);
     	displayPriority.setText(dPriority + "");
+    }
+    
+    @FXML
+    void numTaskPerPriority(ActionEvent event) {
+
     }
     
     /**
