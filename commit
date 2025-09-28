@@ -1,3 +1,11 @@
+commit d1371bd546f965cdadffbb3113b81dab0eab0f8d
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Sun Sep 28 11:02:33 2025 -0400
+
+    B – Implement UI for Removing Task from the List
+    
+    1) Implemented a method for removing a task in the Main Window based on the currently selected task.
+
 commit 0f86c0187e350dd3d8fbfba3123c72cb22815b10
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Sun Sep 28 10:54:09 2025 -0400

@@ -28,5 +28,11 @@
       <TextArea fx:id="displayDescription" prefHeight="200.0" prefWidth="200.0" />
       <Label text="Priority Display" />
       <TextField fx:id="displayPriority" editable="false" />
+      <Button mnemonicParsing="false" onAction="#numTaskPerPriority" text="Tasks per Priority" />
+      <Label fx:id="priority1" text="Priority 1" />
+      <Label fx:id="priority2" text="Priority 2" />
+      <Label fx:id="priority3" text="Priority 3" />
+      <Label fx:id="priority4" text="Priority 4" />
+      <Label fx:id="priority5" text="Priority 5" />
    </children>
 </VBox>
