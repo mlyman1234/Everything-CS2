@@ -1,3 +1,12 @@
+commit c4654248aa0d2635c784ba685d40ac8f4ad628d9
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Mon Sep 29 00:48:18 2025 -0400
+
+    Finishing touches
+    1) I cleared all checkstyle errors in the code
+    2) Created a test class in order to test the Utility class's method
+    3) Fixed the Main window GUI so I can properly see it and test it with more ease
+
 commit 514830195c5d3726ab75cfad2ad8f27708c0a5f0
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Sun Sep 28 22:43:52 2025 -0400

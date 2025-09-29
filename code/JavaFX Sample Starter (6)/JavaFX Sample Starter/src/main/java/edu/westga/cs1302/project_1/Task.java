@@ -1,7 +1,5 @@
 package edu.westga.cs1302.project_1;
 
-
-
 /** Stores information for a Task.
  * 
  * @author CS 1302
@@ -17,7 +15,9 @@ public class Task {
 	 * 
 	 * @precondition none
 	 * @postcondition none
-	 * 
+	 * @param name is the name of the task
+	 * @param description describes the task
+	 * @param priority how important the task is
 	 */
 	public Task(String name, String description, int priority) {
 		this.name = name;
@@ -33,7 +33,7 @@ public class Task {
 	 * 
 	 */
 	public String getName() {
-		return name;
+		return this.name;
 	}
 	
 	/** Returns the Task's description
@@ -44,7 +44,7 @@ public class Task {
 	 * 
 	 */
 	public String getDescription() {
-		return description;
+		return this.description;
 	}
 	
 	/** Returns the Task's priority
@@ -55,7 +55,7 @@ public class Task {
 	 * 
 	 */
 	public int getPriority() {
-		return priority;
+		return this.priority;
 	}
 	
 	/** Returns the Task's name

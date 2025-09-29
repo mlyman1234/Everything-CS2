@@ -15,12 +15,12 @@ public class Utility {
 	 * @postcondition none
 	 * @return result the number of tasks with the selected priority
 	 * @param tasks the list of tasks
-	 * 		  priority the priority of tasks needing to be counted
+	 * @param priority the priority of tasks needing to be counted
 	 */
 	public static int numOfTasksByPriority(int priority, ArrayList<Task> tasks) {
 		int result = 0;
-		for (int i = 0; i < tasks.size(); i++) {
-			if (tasks.get(i).getPriority() == priority) {
+		for (int iteration = 0; iteration < tasks.size(); iteration++) {
+			if (tasks.get(iteration).getPriority() == priority) {
 				result++;
 			}
 		}
