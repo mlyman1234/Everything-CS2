@@ -1,6 +1,10 @@
 package edu.westga.cs1302.project_1.views;
 import javafx.fxml.FXML;
+
+import java.util.ArrayList;
+
 import edu.westga.cs1302.project_1.Task;
+import edu.westga.cs1302.project_1.Utility;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
@@ -84,7 +88,15 @@ public class MainWindow {
     
     @FXML
     void numTaskPerPriority(ActionEvent event) {
-
+		ArrayList<Task> tasks = new ArrayList<Task>();
+    	for(int i = 0; i < this.selectTask.getItems().size(); i++) {
+    		tasks.add(this.selectTask.getItems().get(i));
+    	}
+    	priority1.setText("Priority Level 1: " + Utility.numOfTasksByPriority(1, tasks));
+    	priority2.setText("Priority Level 2: " + Utility.numOfTasksByPriority(2, tasks));
+    	priority3.setText("Priority Level 3: " + Utility.numOfTasksByPriority(3, tasks));
+    	priority4.setText("Priority Level 4: " + Utility.numOfTasksByPriority(4, tasks));
+    	priority5.setText("Priority Level 5: " + Utility.numOfTasksByPriority(5, tasks));
     }
     
     /**

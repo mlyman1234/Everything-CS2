@@ -1,3 +1,11 @@
+commit 2ee5201b3375608fd4eb9a77da61d4990aee31ea
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Sun Sep 28 19:44:06 2025 -0400
+
+    B – Business Logic for Counting Number of Tasks For Each Priority
+    
+    1) Added a static method that accepts a priority and list of tasks in the parameter that returns the number of tasks with the specified priority.
+
 commit bebdfd1c253e3f25b1b1d664102e45bf1fa7b826
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Sun Sep 28 19:32:52 2025 -0400
