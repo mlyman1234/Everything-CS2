@@ -1,3 +1,11 @@
+commit 514830195c5d3726ab75cfad2ad8f27708c0a5f0
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Sun Sep 28 22:43:52 2025 -0400
+
+    C – Connect Business Logic and UI for Counting Number of Tasks For Each Priority
+    
+    1) Implemented a method inside the Main Window class, giving the button functionality by having the method call the numOfTasksByPriority method from the Utility class for each individual priority.
+
 commit 2ee5201b3375608fd4eb9a77da61d4990aee31ea
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Sun Sep 28 19:44:06 2025 -0400
