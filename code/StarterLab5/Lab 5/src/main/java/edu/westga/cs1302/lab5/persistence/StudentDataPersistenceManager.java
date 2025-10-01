@@ -31,11 +31,10 @@ public class StudentDataPersistenceManager {
 		if (students == null) {
 			throw new IllegalArgumentException("must provide an array of students");
 		}
-		try (FileWriter writer = new FileWriter(StudentDataPersistenceManager.FILE_LOCATION)) {
+		try (FileWriter writer = new FileWriter(fileLocation)) {
 			for (Student currStudent : students) {
 				if(currStudent != null) {
-				writer.write(currStudent.getName() + System.lineSeparator());
-				writer.write(currStudent.getGrade() + System.lineSeparator());
+				writer.write(currStudent.getName() + "," + currStudent.getGrade() + System.lineSeparator());
 				}
 			}
 		}
