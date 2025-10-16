@@ -1,19 +1,16 @@
 package edu.westga.cs1302.task_tracker.views;
 
-import java.util.Comparator;
-
 import edu.westga.cs1302.task_tracker.model.Task;
 import edu.westga.cs1302.task_tracker.model.Task.TaskPriority;
 import edu.westga.cs1302.task_tracker.model.TaskComparatorAscending;
+import edu.westga.cs1302.task_tracker.model.TaskComparatorDescending;
 import edu.westga.cs1302.task_tracker.model.TaskUtility;
-import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
-import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
@@ -91,6 +88,10 @@ public class MainWindow {
     		this.tasks.getItems().sort(new TaskComparatorAscending());
     	}
     	
+    	if (order.getValue().equals("Descending")) {
+    		this.tasks.getItems().sort(new TaskComparatorDescending());
+    	}
+    	
     }
     
     /** Perform any needed initialization of UI components and underlying objects.
@@ -99,6 +100,7 @@ public class MainWindow {
     public void initialize() {
     	this.priority.getItems().addAll(TaskPriority.HIGH, TaskPriority.MEDIUM, TaskPriority.LOW);
 		this.order.getItems().add("Ascending");
+		this.order.getItems().add("Descending");
     	this.priority.setValue(this.priority.getItems().get(0));
     }
 }

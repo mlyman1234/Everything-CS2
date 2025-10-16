@@ -1,3 +1,10 @@
+commit 506aef531d9e45aa320418ae185e25e45ea72f16
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Thu Oct 16 07:31:59 2025 -0400
+
+    Feature - Descending Comparison of Tasks
+    Implemented new Comparator named Descending, that compares Tasks based on priority from highest to lowest.
+
 commit ca8ef2a6202d73fc748ef95352dd2cd14df0aa23
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Thu Oct 16 07:26:32 2025 -0400
