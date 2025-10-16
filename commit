@@ -1,3 +1,10 @@
+commit ca8ef2a6202d73fc748ef95352dd2cd14df0aa23
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Thu Oct 16 07:26:32 2025 -0400
+
+    Ascending Comparison of Tasks
+    Implemented new compartor named Ascending that compares Tasks based on priority.
+
 commit 4dba10c4e6cb0f9296d7e18f7c81aa40930c7499
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Wed Oct 1 16:14:52 2025 -0400

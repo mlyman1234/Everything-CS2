@@ -29,8 +29,6 @@ class TestCompare {
 		assertEquals(TaskPriority.LOW, taskList.get(0).getPriority());
         assertEquals(TaskPriority.MEDIUM, taskList.get(1).getPriority());
         assertEquals(TaskPriority.HIGH, taskList.get(2).getPriority());
-
-		
 	}
 
 
