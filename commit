@@ -1,3 +1,11 @@
+commit 7a7e7feb9d0a0665bf58c000037b4d93ec6c1746
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Thu Oct 16 07:43:24 2025 -0400
+
+    Feature - Support Sorting Tasks
+    
+    Implemented functionality to sort the set of tasks in the ListView stored by MainWindow. Added both Ascending and Descending comparators to the combox named order. Then implemented them into the sortTasks method in MainWindow.
+
 commit 506aef531d9e45aa320418ae185e25e45ea72f16
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Thu Oct 16 07:31:59 2025 -0400
