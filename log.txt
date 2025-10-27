@@ -1,3 +1,13 @@
+commit d07f2f1404881251b48b5a943ca72570e95faec6
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Sun Oct 26 12:30:46 2025 -0400
+
+    2 – Sorting Based on Name
+    A – Business Logic for Sorting Based on Name
+    Update the current comparators to display names indicating that they sort by priority.
+    Implement new comparators to be used when sorting tasks based on name. Must include both
+    Ascending and Descending options.
+
 commit 749c1ccd2836d890c9f91e2925d85fa74850f963
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Sun Oct 26 11:25:55 2025 -0400
