@@ -1,3 +1,14 @@
+commit 309ae5cf239473f9cdacb8982aaf1716f9d34f70
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Wed Oct 29 13:24:49 2025 -0400
+
+    3 – SubTasks
+    A – UI for SubTasks
+    You should update MainWindow (fxml and codebehind class) to support the following concerns.
+    • Adding a tub task (button, button should have associated method in MainWindow class)
+    • Displaying a list of subtasks for the currently selected task (listview, listview should have
+    associated field in MainWindow class)
+
 commit d655040e54e4434b79aed626e9f3cb39b690b029
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Mon Oct 27 14:25:36 2025 -0400

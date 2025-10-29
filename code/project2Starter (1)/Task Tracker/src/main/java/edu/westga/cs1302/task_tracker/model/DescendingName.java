@@ -30,16 +30,7 @@ public class DescendingName implements Comparator<Task> {
 		if (o2 == null) {
 			throw new IllegalArgumentException("o2 must not be null");
 		}
-			int result = o1.getName().compareTo(o2.getName());
-			
-			if (result == 1) {
-				result = -1;
-			}
-			
-			else if (result == -1) {
-				result = 1;
-			}
-			return result;
+			return -1 * o1.getName().compareTo(o2.getName());
 		} 
 
 	/** Returns the name of the task to represent the task as a String

@@ -1,5 +1,7 @@
 package edu.westga.cs1302.task_tracker.model;
 
+import java.util.ArrayList;
+
 /** Stores basic information for a Task
  * 
  * @author CS 1302
@@ -35,9 +37,9 @@ public class Task {
 		}
 	}
 	
-	private String description;
-	private final String name;
-	private final TaskPriority priority;
+	protected String description;
+	protected final String name;
+	protected final TaskPriority priority;
 	
 	/** Create a new Task with the provided information.
 	 * 
@@ -112,6 +114,16 @@ public class Task {
 			throw new IllegalArgumentException("description must not be null");
 		}
 		this.description = description;
+	}
+	
+	public ContainerTask addTask(Task subtask) {//TODO add the subtask to the container
+		return new ContainerTask(subtask.getName(), subtask.getDescription(), subtask.getPriority());
+		
+	}
+	
+	public ArrayList<Task> getSubTasks() {
+		ArrayList<Task> task = new ArrayList<Task>();
+		return task;
 	}
 
 	/** Returns the name of the task to represent the task as a String
