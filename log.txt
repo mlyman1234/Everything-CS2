@@ -1,3 +1,10 @@
+commit d655040e54e4434b79aed626e9f3cb39b690b029
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Mon Oct 27 14:25:36 2025 -0400
+
+    B – Connect UI to Business Logic for Sorting Based on Name
+    Update MainWindow to provide the new comparators as options when selecting a sort ordering.
+
 commit d07f2f1404881251b48b5a943ca72570e95faec6
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Sun Oct 26 12:30:46 2025 -0400

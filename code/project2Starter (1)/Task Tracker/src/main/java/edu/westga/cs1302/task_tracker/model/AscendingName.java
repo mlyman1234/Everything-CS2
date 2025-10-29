@@ -2,8 +2,6 @@ package edu.westga.cs1302.task_tracker.model;
 
 import java.util.Comparator;
 
-import edu.westga.cs1302.task_tracker.model.Task.TaskPriority;
-
 /** Compare two Tasks to identify the correct Ascending ordering of the tasks.
  * 
  * @author CS 1302
