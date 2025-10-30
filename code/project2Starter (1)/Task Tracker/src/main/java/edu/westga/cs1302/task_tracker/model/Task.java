@@ -116,11 +116,29 @@ public class Task {
 		this.description = description;
 	}
 	
+	/** Adds a subtask to the Container Task
+	 * 
+	 * @precondition subtask != null
+	 * @postcondition none
+	 * 
+	 * @return Container Task with the new subtask
+	 */
 	public ContainerTask addTask(Task subtask) {
+		if (subtask == null) {
+			throw new IllegalArgumentException("Subtask cannot be null");
+		}
+		
 		return new ContainerTask(this.getName(), this.getDescription(), this.getPriority()).addTask(subtask);
 		
 	}
 	
+	/** Returns the list of subtasks the task currently has
+	 * 
+	 * @precondition none
+	 * @postcondition none
+	 * 
+	 * @return the list of subtasks
+	 */
 	public ArrayList<Task> getSubTasks() {
 		ArrayList<Task> task = new ArrayList<Task>();
 		return task;

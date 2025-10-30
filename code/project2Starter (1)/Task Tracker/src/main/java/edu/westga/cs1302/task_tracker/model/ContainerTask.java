@@ -2,12 +2,44 @@ package edu.westga.cs1302.task_tracker.model;
 
 import java.util.ArrayList;
 
+/** Creates a list to store the subtasks of a task
+ * 
+ * @author CS 1302
+ * @version Fall 2025
+ */
 public class ContainerTask extends Task {
 
 	private ArrayList<Task> subtasks;
 	
-	public ContainerTask (String name, String description, TaskPriority priority) {
+	/** Create a new Container Task with the provided information and stores list of subtasks
+	 * 
+	 * @preconditon name != null && !name.isEmpty() &&
+	 * 				description != null &&
+	 * 				priority != null
+	 * 
+	 * @param name the name of the task
+	 * @param description the description of the task
+	 * @param priority the priority of the task
+	 */
+	public ContainerTask(String name, String description, TaskPriority priority) {
 		super(name, description, priority);
+		
+		if (name == null) {
+			throw new IllegalArgumentException("Name cannot be null");
+		}
+		
+		if (name.isEmpty()) {
+			throw new IllegalArgumentException("Name cannot be empty");
+		}
+		
+		if (description == null) {
+			throw new IllegalArgumentException("Description cannot be null");
+		}
+		
+		if (priority == null) {
+			throw new IllegalArgumentException("Priority cannot be null");
+		}
+		
 		this.subtasks = new ArrayList<Task>();
 	}
 	

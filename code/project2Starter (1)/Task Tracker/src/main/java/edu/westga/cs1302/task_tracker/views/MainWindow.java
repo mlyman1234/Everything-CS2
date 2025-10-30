@@ -2,10 +2,8 @@ package edu.westga.cs1302.task_tracker.views;
 
 import java.util.Comparator;
 
-
 import edu.westga.cs1302.task_tracker.model.AscendingName;
 import edu.westga.cs1302.task_tracker.model.AscendingPriority;
-import edu.westga.cs1302.task_tracker.model.ContainerTask;
 import edu.westga.cs1302.task_tracker.model.DescendingPriority;
 import edu.westga.cs1302.task_tracker.model.DescendingName;
 import edu.westga.cs1302.task_tracker.model.Task;

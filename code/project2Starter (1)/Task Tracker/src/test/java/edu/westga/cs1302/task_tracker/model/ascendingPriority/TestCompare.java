@@ -1,4 +1,4 @@
-package edu.westga.cs1302.task_tracker.model.ascending;
+package edu.westga.cs1302.task_tracker.model.ascendingPriority;
 
 import static org.junit.jupiter.api.Assertions.*;
 

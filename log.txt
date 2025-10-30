@@ -1,3 +1,12 @@
+commit faf94fb0fdc576eac3f2caa3549f67032c9c97b1
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Wed Oct 29 23:47:22 2025 -0400
+
+    B – Connect UI to Business Logic for Adding Task
+    You should update the MainWindow class to implement the method for displaying a subtask. The
+    implementation must present the name, priority, and description of the selected subtask in a popup
+    alert window whenever a subtask is selected.
+
 commit d7f51127cf89f5aab728d87820eaf4188135713f
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Wed Oct 29 22:57:42 2025 -0400
