@@ -12,7 +12,7 @@ public class ContainerTask extends Task {
 	}
 	
 	@Override
-	public ArrayList<Task> getSubTasks(){
+	public ArrayList<Task> getSubTasks() {
 		return this.subtasks;
 	}
 	

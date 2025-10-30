@@ -5,6 +5,7 @@ import java.util.Comparator;
 
 import edu.westga.cs1302.task_tracker.model.AscendingName;
 import edu.westga.cs1302.task_tracker.model.AscendingPriority;
+import edu.westga.cs1302.task_tracker.model.ContainerTask;
 import edu.westga.cs1302.task_tracker.model.DescendingPriority;
 import edu.westga.cs1302.task_tracker.model.DescendingName;
 import edu.westga.cs1302.task_tracker.model.Task;
@@ -37,7 +38,7 @@ public class MainWindow {
     @FXML private TextField selectedPriority;
     @FXML private ListView<Task> tasks;
     @FXML private ComboBox<Comparator<Task>> order;
-    @FXML private ListView<?> subtasks;
+    @FXML private ListView<Task> subtasks;
 
     
 
@@ -77,6 +78,7 @@ public class MainWindow {
     	if (selectedTask != null) {
     		this.selectedPriority.setText(selectedTask.getPriority().toString());
     		this.selectedDescription.setText(selectedTask.getDescription());
+    		this.subtasks.getItems().addAll(selectedTask.getSubTasks());
     	}
     }
 
@@ -142,9 +144,11 @@ public class MainWindow {
     }
     
     @FXML
-    void addSubTask(ActionEvent event){
+    void addSubTask(ActionEvent event) {
 
     }
+    	
+    	
 
     /** Perform any needed initialization of UI components and underlying objects.
      * 

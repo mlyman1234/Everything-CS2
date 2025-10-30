@@ -116,8 +116,8 @@ public class Task {
 		this.description = description;
 	}
 	
-	public ContainerTask addTask(Task subtask) {//TODO add the subtask to the container
-		return new ContainerTask(subtask.getName(), subtask.getDescription(), subtask.getPriority());
+	public ContainerTask addTask(Task subtask) {
+		return new ContainerTask(this.getName(), this.getDescription(), this.getPriority()).addTask(subtask);
 		
 	}
 	
