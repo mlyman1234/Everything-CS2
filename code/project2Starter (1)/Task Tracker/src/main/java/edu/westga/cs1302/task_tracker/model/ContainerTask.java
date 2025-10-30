@@ -24,22 +24,6 @@ public class ContainerTask extends Task {
 	public ContainerTask(String name, String description, TaskPriority priority) {
 		super(name, description, priority);
 		
-		if (name == null) {
-			throw new IllegalArgumentException("Name cannot be null");
-		}
-		
-		if (name.isEmpty()) {
-			throw new IllegalArgumentException("Name cannot be empty");
-		}
-		
-		if (description == null) {
-			throw new IllegalArgumentException("Description cannot be null");
-		}
-		
-		if (priority == null) {
-			throw new IllegalArgumentException("Priority cannot be null");
-		}
-		
 		this.subtasks = new ArrayList<Task>();
 	}
 	

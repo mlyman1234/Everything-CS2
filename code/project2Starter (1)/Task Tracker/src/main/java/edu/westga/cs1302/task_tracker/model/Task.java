@@ -121,6 +121,7 @@ public class Task {
 	 * @precondition subtask != null
 	 * @postcondition none
 	 * 
+	 * @param subtask the subtask being added to the container task
 	 * @return Container Task with the new subtask
 	 */
 	public ContainerTask addTask(Task subtask) {

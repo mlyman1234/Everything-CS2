@@ -1,3 +1,10 @@
+commit d7580cc53ec48e32154e29cfdac9d9076855367e
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Thu Oct 30 08:34:39 2025 -0400
+
+    Tests and Checkstyle
+    Created test cases for classes and fixed checkstyle violations.
+
 commit faf94fb0fdc576eac3f2caa3549f67032c9c97b1
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Wed Oct 29 23:47:22 2025 -0400

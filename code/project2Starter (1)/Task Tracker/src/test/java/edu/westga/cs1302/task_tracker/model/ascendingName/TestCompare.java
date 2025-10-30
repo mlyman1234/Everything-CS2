@@ -12,7 +12,6 @@ class TestCompare {
 
 	@Test
 	void testO1IsNull() {
-		Task o1 = new Task("name", "desc", TaskPriority.HIGH);
 		Task o2 = new Task("name", "desc", TaskPriority.HIGH);
 		AscendingName ascending = new AscendingName();
 		
@@ -22,7 +21,6 @@ class TestCompare {
 	@Test
 	void testO2IsNull() {
 		Task o1 = new Task("name", "desc", TaskPriority.HIGH);
-		Task o2 = new Task("name", "desc", TaskPriority.HIGH);
 		AscendingName ascending = new AscendingName();
 		
 		assertThrows(IllegalArgumentException.class, ()->{ascending.compare(o1, null);});

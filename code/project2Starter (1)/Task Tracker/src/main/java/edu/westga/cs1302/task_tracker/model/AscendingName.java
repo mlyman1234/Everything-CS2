@@ -10,7 +10,7 @@ import java.util.Comparator;
 public class AscendingName implements Comparator<Task> {
 
 	/** Returns a value indicating ordering of the two tasks based 
-	 * on Ascending priority.
+	 * on Ascending name.
 	 * 
 	 * @precondition o1 != null && o2 != null
 	 * @postcondition none
