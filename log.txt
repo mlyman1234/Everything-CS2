@@ -1,3 +1,13 @@
+commit c743268f132c2358e6d9d32c407ba4b20e514e6e
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Wed Oct 29 20:37:11 2025 -0400
+
+    C – Connect UI to Business Logic for SubTasks
+    Update the implementation of the MainWindow to support adding a subtask.
+    • Must replace the currently selected Task with the Task returned when adding the subtask.
+    Update the implementation of the MainWindow to support displaying the list of subtasks when a Task is
+    selected.
+
 commit 4cdb9cdec5bb94b68b1b95981d97be80973283e1
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Wed Oct 29 14:45:00 2025 -0400
