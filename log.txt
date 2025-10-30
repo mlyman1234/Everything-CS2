@@ -1,3 +1,14 @@
+commit d7f51127cf89f5aab728d87820eaf4188135713f
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Wed Oct 29 22:57:42 2025 -0400
+
+    4 – Displaying Selected SubTask
+    The user will be able to see the name, description, and priority of a selected subtask.
+    A – UI for Adding Tasks
+    You should update MainWindow (fxml and codebehind class) to support the following concerns.
+    • Displaying a selected Task from the subtask list (update the MainWindow class and fxml
+    appropriately)
+
 commit c743268f132c2358e6d9d32c407ba4b20e514e6e
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Wed Oct 29 20:37:11 2025 -0400

@@ -83,6 +83,14 @@ public class MainWindow {
     		}
     	}
     }
+    
+    @FXML
+    void selectSubTask(MouseEvent event) {
+    	Task selectedTask = this.tasks.getSelectionModel().getSelectedItem();
+    	Alert alert = new Alert(AlertType.INFORMATION);
+		alert.setContentText(selectedTask.getName() + System.lineSeparator() + selectedTask.getDescription() + System.lineSeparator() + selectedTask.getPriority());
+		alert.showAndWait();
+    }
 
     /** Remove the currently selected task.
      * 
@@ -148,7 +156,13 @@ public class MainWindow {
     @FXML
     void addSubTask(ActionEvent event) {
     	Task selectedTask = this.tasks.getSelectionModel().getSelectedItem();
-    	this.tasks.getItems().add(selectedTask.addTask((new Task(this.name.getText(), this.description.getText(), this.priority.getValue()))));
+    	try {
+    	this.subtasks.getItems().add(selectedTask.addTask((new Task(this.name.getText(), this.description.getText(), this.priority.getValue()))));
+    	} catch (IllegalArgumentException error) {
+    		Alert alert = new Alert(AlertType.ERROR);
+    		alert.setContentText(error.getMessage());
+    		alert.showAndWait();
+    	}
     }
     	 
     	
