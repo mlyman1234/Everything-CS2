@@ -1,3 +1,11 @@
+commit 78680bf88f2bb9c4ca4b93ccce25b5daa3a15738
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Thu Oct 30 08:45:26 2025 -0400
+
+    Fixing minor mistakes
+    
+    I realized I didnt add the blank space in between lines in commits but I don't know to fix them. I also fixed some small things in project.
+
 commit d7580cc53ec48e32154e29cfdac9d9076855367e
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Thu Oct 30 08:34:39 2025 -0400
