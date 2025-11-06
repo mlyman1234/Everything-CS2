@@ -1,3 +1,11 @@
+commit bc144840cfbdf09f3a55d2e61a910ed801b251cd
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Wed Nov 5 19:39:11 2025 -0500
+
+    Implement ViewModel
+    
+    You need to implement a view model which provides appropriate property objects for each of the values needed by the UI and appropriate methods for any behavior. Ensure the view model is tested appropriately.
+
 commit 78680bf88f2bb9c4ca4b93ccce25b5daa3a15738
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Thu Oct 30 08:45:26 2025 -0400

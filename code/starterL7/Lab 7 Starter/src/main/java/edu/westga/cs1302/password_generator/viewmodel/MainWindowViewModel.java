@@ -1,7 +1,5 @@
 package edu.westga.cs1302.password_generator.viewmodel;
 
-import java.util.Random;
-
 import edu.westga.cs1302.password_generator.model.PasswordGenerator;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.IntegerProperty;
@@ -9,9 +7,13 @@ import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Alert.AlertType;
 
+/**
+ * The ViewModel for MainWindow class.
+ * 
+ * @author CS1302
+ * @version Fall 2025
+ */
 public class MainWindowViewModel {
 	
 	private BooleanProperty mustHaveAtLeastOneDigitProperty;
@@ -22,6 +24,9 @@ public class MainWindowViewModel {
 	
 	private PasswordGenerator generator;
 	
+	/**
+	 * Instantiates a new main window view model.
+	 */
 	public MainWindowViewModel() {
 		this.mustHaveAtLeastOneDigitProperty = new SimpleBooleanProperty(false);
 		this.mustHaveAtLeastOneLowerCaseLetterProperty = new SimpleBooleanProperty(false);
@@ -30,22 +35,57 @@ public class MainWindowViewModel {
 		this.passwordProperty = new SimpleStringProperty("");
 	}
 
+	/**
+	 * Gets the boolean property.
+	 *
+	 * @return the mustHaveAtLeastOneDigitProperty
+	 */
 	public BooleanProperty getMustHaveAtLeastOneDigitProperty() {
-		return mustHaveAtLeastOneDigitProperty;
+		return this.mustHaveAtLeastOneDigitProperty;
 	}
 	
+	/**
+	 * Gets the boolean property.
+	 *
+	 * @return the mustHaveAtLeastOneLowerCaseLetterProperty
+	 */
 	public BooleanProperty getMustHaveAtLeastOneLowerCaseLetterProperty() {
-		return mustHaveAtLeastOneLowerCaseLetterProperty;
+		return this.mustHaveAtLeastOneLowerCaseLetterProperty;
 	}
 	
+	/**
+	 * Gets the boolean property.
+	 *
+	 * @return the mustHaveAtLeastOneUpperCaseLetterProperty
+	 */
 	public BooleanProperty getMustHaveAtLeastOneUpperCaseLetterProperty() {
-		return mustHaveAtLeastOneUpperCaseLetterProperty;
+		return this.mustHaveAtLeastOneUpperCaseLetterProperty;
 	}
 	
+	/**
+	 * Gets the length property.
+	 *
+	 * @return the lengthProperty
+	 */
 	public IntegerProperty getLengthProperty() {
-		return lengthProperty;
+		return this.lengthProperty;
 	}
 	
+	/**
+	 * Gets the password property.
+	 *
+	 * @return the passwordProperty
+	 */
+	public StringProperty getPasswordProperty() {
+		return this.passwordProperty;
+	}
+	
+	/**
+	 * Generates a password based on if specific boolean properties are true 
+	 * as well as the minimum length of the desired password. After generating the password
+	 * it sets the result to the password property.
+	 *
+	 */
 	public void generatePassword() {
 		this.generator.setMinimumLength(this.lengthProperty.getValue());
 		this.generator.setMustHaveAtLeastOneDigit(this.mustHaveAtLeastOneDigitProperty.getValue());
@@ -56,9 +96,5 @@ public class MainWindowViewModel {
 		
 		this.passwordProperty.set(password);
 	}
-
-
 		
-	
-
 }

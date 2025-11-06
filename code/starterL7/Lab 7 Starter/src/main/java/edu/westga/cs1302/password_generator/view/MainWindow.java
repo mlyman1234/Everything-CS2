@@ -3,6 +3,7 @@ package edu.westga.cs1302.password_generator.view;
 import java.util.Random;
 
 import edu.westga.cs1302.password_generator.model.PasswordGenerator;
+import edu.westga.cs1302.password_generator.viewmodel.MainWindowViewModel;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -25,22 +26,29 @@ public class MainWindow {
     @FXML private TextArea output;
     
     private PasswordGenerator generator;
+	private MainWindowViewModel viewModel;
 
+    
+    public MainWindow () {
+    	this.viewModel = new MainWindowViewModel();
+    }
+    
+	private void bindControlsToViewModel() {
+		this.minimumLength.textProperty().bindBidirectional(this.viewModel.getLengthProperty(), new NumberStringGenertor());
+		this.output.textProperty().bindBidirectional(this.viewModel.getPasswordProperty());
+		this.mustIncludeDigits.selectedProperty().bind(this.viewModel.getMustHaveAtLeastOneDigitProperty());
+		this.mustIncludeLowerCaseLetters.selectedProperty().bind(this.viewModel.getMustHaveAtLeastOneLowerCaseLetterProperty());
+		this.mustIncludeUpperCaseLetters.selectedProperty().bind(this.viewModel.getMustHaveAtLeastOneUpperCaseLetterProperty());
+	}
     @FXML
     void generatePassword(ActionEvent event) {
-    	int minimumLength = -1;
-    	
     	try {
-    		minimumLength = Integer.parseInt(this.minimumLength.getText());
+    	this.viewModel.generatePassword();
     	} catch (NumberFormatException numberError) {
     		Alert alert = new Alert(AlertType.ERROR);
     		alert.setContentText("Invalid Minimum Length: must be a positive integer, but was " + this.minimumLength.getText());
     		alert.show();
     		return;
-    	}
-    	
-    	try {
-    		this.generator.setMinimumLength(minimumLength);
     	} catch (IllegalArgumentException invalidLengthError) {
     		Alert alert = new Alert(AlertType.ERROR);
     		alert.setContentText("Invalid Minimum Length: " + invalidLengthError.getMessage());
@@ -48,13 +56,6 @@ public class MainWindow {
     		return;
     	}
     	
-    	this.generator.setMustHaveAtLeastOneDigit(this.mustIncludeDigits.isSelected());
-    	this.generator.setMustHaveAtLeastOneLowerCaseLetter(this.mustIncludeLowerCaseLetters.isSelected());
-    	this.generator.setMustHaveAtLeastOneUpperCaseLetter(this.mustIncludeUpperCaseLetters.isSelected());
-    	
-    	String password = this.generator.generatePassword();
-    	
-    	this.output.setText(password);
     }
 
     @FXML
@@ -68,5 +69,7 @@ public class MainWindow {
         this.minimumLength.setText("1");
         Random randomNumberGenerator = new Random();
         this.generator = new PasswordGenerator(randomNumberGenerator.nextLong());
+        this.bindControlsToViewModel();
+        
     }
 }
