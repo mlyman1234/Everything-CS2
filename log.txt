@@ -1,3 +1,11 @@
+commit bf8a4f609021cada21c53d106f3a1b0370fbcd82
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Thu Nov 6 08:35:31 2025 -0500
+
+    Bind View to ViewModel
+    
+    You need to implement the appropriate databinding and calls in the MainWindow class to utilize the ViewModel class implemented in the previous step.
+
 commit bc144840cfbdf09f3a55d2e61a910ed801b251cd
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Wed Nov 5 19:39:11 2025 -0500
