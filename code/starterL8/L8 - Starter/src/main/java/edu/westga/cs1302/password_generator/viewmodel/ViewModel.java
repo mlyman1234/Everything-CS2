@@ -5,6 +5,7 @@ import java.util.Random;
 import edu.westga.cs1302.password_generator.model.PasswordGenerator;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
+import javafx.beans.property.SimpleListProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
@@ -19,7 +20,7 @@ public class ViewModel {
 	private BooleanProperty requireLowercase;
 	private BooleanProperty requireUppercase;
 	
-	private StringProperty password;
+	private SimpleListProperty<String> password;
 	private StringProperty errorText;
 	
     private PasswordGenerator generator;
@@ -32,7 +33,7 @@ public class ViewModel {
 		this.requireLowercase = new SimpleBooleanProperty(false);
 		this.requireUppercase = new SimpleBooleanProperty(false);
 		
-		this.password = new SimpleStringProperty("");
+		this.password = new SimpleListProperty<String>();
 		this.errorText = new SimpleStringProperty("");
 
         Random randomNumberGenerator = new Random();
@@ -75,7 +76,7 @@ public class ViewModel {
 	 * 
 	 * @return the password property
 	 */
-	public StringProperty getPassword() {
+	public SimpleListProperty<String> getPassword() {
 		return this.password;
 	}
 
@@ -95,8 +96,6 @@ public class ViewModel {
 	 */
 	public void generatePassword() {
     	int minimumLength = -1;
-    	this.password.setValue("");
-    	
     	try {
     		minimumLength = Integer.parseInt(this.minimumLength.getValue());
     	} catch (NumberFormatException numberError) {
@@ -117,7 +116,7 @@ public class ViewModel {
     	
     	String password = this.generator.generatePassword();
     	
-    	this.password.setValue(password);
+    	this.password.add(password);
     }
 
 }
