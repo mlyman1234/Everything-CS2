@@ -1,6 +1,7 @@
 package edu.westga.cs1302.contact_manager.viewmodel;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 
 import edu.westga.cs1302.contact_manager.model.Contact;
@@ -90,12 +91,18 @@ public class MainWindowViewModel {
 	 * @postcondition a new contact with name and phone number provided has been added
 	 * 
 	 * @throws IllegalArgumentException if either name or phone number are invalid (see Contact class)
+	 * 
 	 */
 	public void addContact() throws IllegalArgumentException {
 		Contact contact = new Contact(this.name.get(), this.phoneNumber.get());
-		this.contacts.add(contact);
-		this.phoneNumberMap.put(contact.getPhoneNumber(), contact);
-		this.nameMap.put(contact.getName(), contact);
+		if (!this.phoneNumberMap.containsKey(contact.getPhoneNumber())  && !this.nameMap.containsKey(contact.getName())) {
+			this.contacts.add(contact);
+			this.phoneNumberMap.put(contact.getPhoneNumber(), contact);
+			this.nameMap.put(contact.getName(), contact);
+		}  else {
+			throw new IllegalArgumentException("Phone Number or Name is already in-use.");
+		}
+		
 	}
 	
 	/** Finds a contact with name or phone number matches provide search criteria
@@ -110,13 +117,20 @@ public class MainWindowViewModel {
 			throw new IllegalArgumentException("Search criteria is not a valid name or phone number");
 		}
 		
-		Contact contact = phoneNumberMap.get("");
-		
-		for (Contact currContact : this.contacts.get()) {
-			if (currContact.getName().equals(this.searchCriteria.get()) || currContact.getPhoneNumber().equals(this.searchCriteria.get())) {
-				return currContact.toString();
+		if (Contact.checkPhoneNumber(this.searchCriteria.get())) {
+			Contact contactBasedNumber = this.phoneNumberMap.get(this.searchCriteria.get());
+			if (contactBasedNumber != null) {
+				return contactBasedNumber.toString();
 			}
 		}
+			
+		if (Contact.checkName(this.searchCriteria.get())) {
+			Contact contactBasedName = this.nameMap.get(this.searchCriteria.get());
+			if  (contactBasedName != null) {
+				return contactBasedName.toString();
+			}
+		}
+		
 		return "No contact found.";
 	}
 	

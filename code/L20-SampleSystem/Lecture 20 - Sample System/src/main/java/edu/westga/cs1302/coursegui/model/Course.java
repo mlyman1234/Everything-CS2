@@ -130,8 +130,13 @@ public class Course implements Collection<Student> {
 		if (student == null) {
 			throw new NullPointerException(UI.NULL_STUDENT);
 		}
-
-		return this.students.put(student.getId(), student) == null;
+		
+		if (this.students.containsKey(student.getId())) {
+			this.students.put(student.getId(), student);
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	@Override
@@ -139,6 +144,7 @@ public class Course implements Collection<Student> {
 		if (student == null) {
 			throw new NullPointerException(UI.NULL_STUDENT);
 		}
+
 		return this.students.containsValue(student);
 	}
 
@@ -147,6 +153,7 @@ public class Course implements Collection<Student> {
 		if (student == null) {
 			throw new NullPointerException(UI.NULL_STUDENT);
 		}
+		
 		return this.students.remove(((Student) student).getId()) != null;
 		// or
 		//return this.students.remove(((Student)student).getId(), student) ;
@@ -162,7 +169,7 @@ public class Course implements Collection<Student> {
 		return this.students.size();
 	}
 	
-	////////////////////////////////////////////////////////
+	///////////////////////////.20////////////////////////////
 
 	@Override
 	public void clear() {
