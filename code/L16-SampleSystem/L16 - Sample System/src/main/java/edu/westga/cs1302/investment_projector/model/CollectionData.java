@@ -1,6 +1,5 @@
-package edu.westga.cs1302.e3.model;
+package edu.westga.cs1302.investment_projector.model;
 
-import java.util.ArrayList;
 
 /** Stores information for a Student
  * 
@@ -8,15 +7,10 @@ import java.util.ArrayList;
  * @version Fall 2024
  */
 public class CollectionData {
-	private ArrayList<String> collection;
 	private String name;
 	
 	public CollectionData(String name) {
 		this.name = name;
-	}
-
-	public ArrayList<String> getCollection() {
-		return collection;
 	}
 
 	public String getName() {
