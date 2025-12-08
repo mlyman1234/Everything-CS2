@@ -23,12 +23,15 @@ public class MainWindow {
     private CollectionVM vm;
     
     @FXML
-    void bindVM() {
+    void initalize() {
     	this.vm = new CollectionVM();
-    	
+  
 		this.name.textProperty().bindBidirectional(this.vm.getName());
 		this.collectionOfNames.setItems(this.vm.getCollection());
-
+		this.setUpButtons();
+    }
+    
+	private void setUpButtons() {
     	this.addingName.setOnAction((event) -> {
     		try {
     			this.vm.addName();
@@ -36,8 +39,16 @@ public class MainWindow {
     			Alert alert = new Alert(AlertType.ERROR);
     			alert.setContentText(error.getMessage());
     			alert.showAndWait();
-    		}
+    		} 
     	});
+    	
+    	this.name.textProperty().addListener((observable, oldValue, newValue) -> {
+			if (newValue.isEmpty()) {
+				this.addingName.setDisable(true);
+			} else {
+				this.addingName.setDisable(false);
+			}
+	});
     	
     	this.removingName.setOnAction((event) -> {
     		try {
