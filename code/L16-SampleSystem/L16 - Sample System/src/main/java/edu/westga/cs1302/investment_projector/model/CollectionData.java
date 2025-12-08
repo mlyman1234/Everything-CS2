@@ -10,6 +10,9 @@ public class CollectionData {
 	private String name;
 	
 	public CollectionData(String name) {
+		if(name.isEmpty() || name == null) {
+			throw new IllegalArgumentException("Can't be null or empty");
+		}
 		this.name = name;
 	}
 

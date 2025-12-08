@@ -2,16 +2,17 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane minHeight="298.0" minWidth="340.0" prefHeight="298.0" prefWidth="452.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.westga.cs1302.investment_projector.view.MainWindow">
+<AnchorPane minHeight="298.0" minWidth="340.0" prefHeight="463.0" prefWidth="490.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.westga.cs1302.investment_projector.view.MainWindow">
    <children>
-      <TextField fx:id="name" layoutX="140.0" layoutY="30.0" />
-      <Button fx:id="addingName" layoutX="14.0" layoutY="30.0" mnemonicParsing="false" onAction="#addName" text="Add Name" />
-      <ListView fx:id="collectionOfNames" layoutX="126.0" layoutY="84.0" prefHeight="200.0" prefWidth="200.0">
+      <TextField fx:id="name" layoutX="48.0" layoutY="51.0" />
+      <Button fx:id="addingName" layoutX="92.0" layoutY="90.0" mnemonicParsing="false" text="Add Name" />
+      <ListView fx:id="collectionOfNames" layoutX="34.0" layoutY="175.0" prefHeight="200.0" prefWidth="200.0">
          <contextMenu>
             <ContextMenu>
               <items>
@@ -20,6 +21,12 @@
             </ContextMenu>
          </contextMenu>
       </ListView>
-      <Button fx:id="removingName" layoutX="329.0" layoutY="30.0" mnemonicParsing="false" onAction="#removeName" text="Remove Name" />
+      <Button fx:id="removingName" layoutX="80.0" layoutY="386.0" mnemonicParsing="false" text="Remove Name" />
+      <Label layoutX="83.0" layoutY="24.0" text="Collection Name" />
+      <Label layoutX="92.0" layoutY="148.0" text="Collections" />
+      <ListView fx:id="comics" layoutX="270.0" layoutY="175.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="addingComic" layoutX="327.0" layoutY="90.0" mnemonicParsing="false" text="Add Comic" />
+      <Button fx:id="removingComic" layoutX="315.0" layoutY="386.0" mnemonicParsing="false" text="Remove Comic" />
+      <Label layoutX="348.0" layoutY="148.0" text="Comics" />
    </children>
 </AnchorPane>

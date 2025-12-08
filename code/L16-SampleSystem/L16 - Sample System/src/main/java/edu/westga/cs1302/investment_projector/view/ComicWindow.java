@@ -15,7 +15,7 @@ import javafx.scene.control.Button;
  * @author CS 1302
  * @version Fall 2024
  */
-public class MainWindow {
+public class ComicWindow {
 	@FXML private ListView<CollectionData> collectionOfNames;
     @FXML private TextField name;
     @FXML private Button addingName;
