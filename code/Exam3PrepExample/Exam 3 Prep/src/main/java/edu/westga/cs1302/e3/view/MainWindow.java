@@ -1,12 +1,7 @@
 package edu.westga.cs1302.e3.view;
 
-import edu.westga.cs1302.e3.model.Student;
-import edu.westga.cs1302.e3.viewmodel.Exam3PrepViewModel;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Alert.AlertType;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 
@@ -16,32 +11,20 @@ import javafx.scene.control.TextField;
  * @version Fall 2024
  */
 public class MainWindow {
-    @FXML private TextField nameTextField;
-    @FXML private ListView<Student> studentsListView;
-    @FXML private ComboBox<Integer> gpaComboBox;
-    @FXML private Button addStudentButton;
-    @FXML private Button displayDetailsButton;
-	
-	private Exam3PrepViewModel vm; 
+	@FXML
+    private ListView<?> collectionOfNames;
 
     @FXML
-    void initialize() {
-    	this.vm = new Exam3PrepViewModel();
-    	
-    	this.nameTextField.textProperty().bindBidirectional(this.vm.getName());
-    	this.studentsListView.setItems(this.vm.getStudents());
-    	this.gpaComboBox.setItems(this.vm.getGpaOption());
-    	this.vm.getSelectedGpa().bind(this.gpaComboBox.getSelectionModel().selectedItemProperty());
-    	
-    	this.addStudentButton.setOnAction((event) -> {
-    		try {
-    			this.vm.addStudent();
-    		} catch (IllegalArgumentException error) {
-    			Alert alert = new Alert(AlertType.ERROR);
-    			alert.setContentText(error.getMessage());
-    			alert.showAndWait();
-    		}
-    	});
+    private TextField name;
+
+    @FXML
+    void removeName(ActionEvent event) {
+
     }
-	
+
+    @FXML
+    void addName(ActionEvent event) {
+
+    }
+
 }

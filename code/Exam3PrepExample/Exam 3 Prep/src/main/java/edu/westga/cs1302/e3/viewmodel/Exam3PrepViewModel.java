@@ -2,7 +2,7 @@ package edu.westga.cs1302.e3.viewmodel;
 
 import java.util.ArrayList;
 
-import edu.westga.cs1302.e3.model.Student;
+import edu.westga.cs1302.e3.model.CollectionData;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.ListProperty;
 import javafx.beans.property.SimpleIntegerProperty;
@@ -18,13 +18,13 @@ import javafx.collections.FXCollections;
  */
 public class Exam3PrepViewModel {
 	private StringProperty name;
-	private ListProperty<Student> students;
+	private ListProperty<CollectionData> students;
 	private ListProperty<Integer> gpaOption;
 	private IntegerProperty selectedGpa;
 	
 	public Exam3PrepViewModel() {
 		this.name = new SimpleStringProperty("");
-		this.students = new SimpleListProperty<Student>(FXCollections.observableArrayList(new ArrayList<Student>()));
+		this.students = new SimpleListProperty<CollectionData>(FXCollections.observableArrayList(new ArrayList<CollectionData>()));
 		this.gpaOption = new SimpleListProperty<Integer>(FXCollections.observableArrayList(new ArrayList<Integer>()));
 		this.gpaOption.add(1);
 		this.gpaOption.add(2);
@@ -33,7 +33,7 @@ public class Exam3PrepViewModel {
 		this.selectedGpa = new SimpleIntegerProperty(4);
 	}
 
-	public ListProperty<Student> getStudents() {
+	public ListProperty<CollectionData> getStudents() {
 		return students;
 	}
 
@@ -50,12 +50,12 @@ public class Exam3PrepViewModel {
 	}
 	
 	public void addStudent() {
-		Student student = new Student(this.name.getName(), this.selectedGpa.get());
+		CollectionData student = new CollectionData(this.name.getName(), this.selectedGpa.get());
 		this.students.add(student);
 	}
 	
 	public int displayGPA() {
-		Student student = new Student(this.name.getName(), this.selectedGpa.get());
+		CollectionData student = new CollectionData(this.name.getName(), this.selectedGpa.get());
 		int gpa = student.getGPA();
 		if (student.getName().isEmpty()) {
 			throw new IllegalArgumentException("");
