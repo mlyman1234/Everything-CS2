@@ -6,7 +6,6 @@ import static org.junit.Assert.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
-import edu.westga.cs1302.contact_manager.model.Contact;
 import edu.westga.cs1302.contact_manager.viewmodel.MainWindowViewModel;
 
 public class testAddContact {

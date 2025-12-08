@@ -108,7 +108,8 @@ public class CourseGuiCodeBehind {
 	private void setupListenersForValidation() {
 		this.idTextField.textProperty().addListener((observable, oldValue, newValue) -> {
 				if (newValue != null) {
-					if (!newValue.matches("\\d{0,3}|(\\d{3}(-\\d{0,2}|-\\d{2}-\\d{0,4}))")) {
+					if (!newValue.matches("\\d{0,3}|(\\d{3}(-\\d{0,"
+							+ "2}|-\\d{2}-\\d{0,4}))")) {
 						this.idTextField.setText(oldValue);
 						if (!oldValue.matches("\\d{3}-\\d{2}-\\d{4}")) {
 							this.idErrorLabel.setVisible(true);

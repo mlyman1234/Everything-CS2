@@ -64,9 +64,7 @@ public class MainWindow {
     				this.vm.generatePassword();
     			} 
     	);
-    	
-
-    	
+    
     	this.savePassword.setOnAction((event) -> {
     	FileChooser fileChooser = new FileChooser();
     	fileChooser.setTitle("Passwords Export as txt file");

@@ -1,0 +1,16 @@
+commit 75d98cfe91e5225ad6dc614dc3e03bbaaf83eb24
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Tue Dec 2 08:54:12 2025 -0500
+
+    Prevent duplicate contacts
+    
+    You should update the system to not allow storing a contact if there is an existing contact with the same name or phone number.
+
+commit 030ab9b2f8150a47218e09d16bd55fca2163d6c7
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Mon Dec 1 12:09:03 2025 -0500
+
+    Lookup contact by system name or phone number
+    
+    You should update the system to utilize a map when searching for a user.
+
