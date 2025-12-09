@@ -32,7 +32,7 @@ public class CollectionVM {
 	}
 	
 	public void addName() {
-		CollectionData addedcollection = new CollectionData(this.name.getName());
+		CollectionData addedcollection = new CollectionData(this.name.get());
 		this.collection.add(addedcollection);
 	}
 	

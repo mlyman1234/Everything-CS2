@@ -1,5 +1,6 @@
 package edu.westga.cs1302.investment_projector.model;
 
+import java.util.ArrayList;
 
 /** Stores information for a Student
  * 
@@ -8,16 +9,22 @@ package edu.westga.cs1302.investment_projector.model;
  */
 public class CollectionData {
 	private String name;
+	private ArrayList<ComicData> comics;
 	
 	public CollectionData(String name) {
 		if(name.isEmpty() || name == null) {
 			throw new IllegalArgumentException("Can't be null or empty");
 		}
 		this.name = name;
+		this.comics = comics;
 	}
 
 	public String getName() {
 		return name;
+	}
+
+	public ArrayList<ComicData> getComics() {
+		return comics;
 	}
 	
 	

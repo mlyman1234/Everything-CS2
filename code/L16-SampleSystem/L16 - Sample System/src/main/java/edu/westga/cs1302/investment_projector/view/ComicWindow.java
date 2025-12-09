@@ -1,6 +1,7 @@
 package edu.westga.cs1302.investment_projector.view;
 
 import edu.westga.cs1302.investment_projector.model.CollectionData;
+import edu.westga.cs1302.investment_projector.model.ComicData;
 import edu.westga.cs1302.investment_projector.viewmodel.CollectionVM;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -18,17 +19,17 @@ import javafx.scene.control.Button;
 public class ComicWindow {
 	@FXML private Button addingComic;
 
-    @FXML private Button addingName;
+    @FXML private Button cancelComic;
 
     @FXML private TextField issueTextField;
 
-    @FXML private TextField nameTextField;
-    
-    private CollectionVM vm;
-    
-    @FXML
-    void initalize() {
-    	
-    }
+    @FXML private ListView<ComicData> listOfComics;
+
+    @FXML private Button removeComic;
+
+    @FXML private TextField titleTextField;
+
+
+
 
 }
