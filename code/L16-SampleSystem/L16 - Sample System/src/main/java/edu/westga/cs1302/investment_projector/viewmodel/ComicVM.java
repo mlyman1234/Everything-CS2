@@ -1,6 +1,5 @@
 package edu.westga.cs1302.investment_projector.viewmodel;
 
-
 import edu.westga.cs1302.investment_projector.model.CollectionData;
 import edu.westga.cs1302.investment_projector.model.ComicData;
 import javafx.beans.property.IntegerProperty;
@@ -37,6 +36,11 @@ public class ComicVM {
 	public void addComic() {
 		ComicData addedComic = new ComicData(this.title.get(), this.issueNumber.get());
 		this.collection.getComics().add(addedComic);		
+	}
+	
+	public void cancelComic() {
+		this.title.set("");
+		this.issueNumber.set(0);
 	}
 
 }

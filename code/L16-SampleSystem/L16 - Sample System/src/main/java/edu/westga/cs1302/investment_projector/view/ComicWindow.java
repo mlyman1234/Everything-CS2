@@ -1,6 +1,5 @@
 package edu.westga.cs1302.investment_projector.view;
 
-
 import edu.westga.cs1302.investment_projector.viewmodel.ComicVM;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -56,8 +55,7 @@ public class ComicWindow {
     	
     	this.cancelComic.setOnAction((event) -> {
     		try {
-    			this.titleTextField.clear();
-    			this.issueTextField.clear();
+    			this.vm.cancelComic();
     		} catch (IllegalArgumentException error) {
     			Alert alert = new Alert(AlertType.ERROR);
     			alert.setContentText(error.getMessage());

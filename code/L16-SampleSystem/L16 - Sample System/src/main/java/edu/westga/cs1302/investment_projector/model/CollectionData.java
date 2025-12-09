@@ -2,7 +2,7 @@ package edu.westga.cs1302.investment_projector.model;
 
 import java.util.ArrayList;
 
-/** Stores information for a Student
+/** Stores information for a Collection
  * 
  * @author CS 1302
  * @version Fall 2024

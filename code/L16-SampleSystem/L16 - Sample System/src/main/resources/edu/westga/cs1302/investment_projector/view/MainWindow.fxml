@@ -34,6 +34,6 @@
          </contextMenu>
       </ListView>
       <Button fx:id="addComic" layoutX="301.0" layoutY="128.0" mnemonicParsing="false" text="Add Comic" />
-      <Button fx:id="removeComic" layoutX="392.0" layoutY="128.0" mnemonicParsing="false" text="Remove Comic" />
+      <Button fx:id="removingComic" layoutX="392.0" layoutY="128.0" mnemonicParsing="false" text="Remove Comic" />
    </children>
 </AnchorPane>

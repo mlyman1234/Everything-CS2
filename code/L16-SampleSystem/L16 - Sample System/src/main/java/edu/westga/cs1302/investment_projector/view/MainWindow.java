@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import edu.westga.cs1302.investment_projector.Main;
 import edu.westga.cs1302.investment_projector.model.CollectionData;
+import edu.westga.cs1302.investment_projector.model.ComicData;
 import edu.westga.cs1302.investment_projector.viewmodel.CollectionVM;
 import edu.westga.cs1302.investment_projector.viewmodel.ComicVM;
 import javafx.fxml.FXML;
@@ -25,7 +26,7 @@ import javafx.scene.control.Button;
  */
 public class MainWindow {
 	@FXML private ListView<CollectionData> collectionOfNames;
-	@FXML private ListView<CollectionData> listOfComics;
+	@FXML private ListView<ComicData> listOfComics;
     @FXML private TextField name;
     @FXML private Button addingName;
     @FXML private Button removingName;

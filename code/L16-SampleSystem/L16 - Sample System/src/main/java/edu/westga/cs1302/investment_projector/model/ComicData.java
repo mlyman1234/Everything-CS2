@@ -25,7 +25,7 @@ public class ComicData {
 	 * @return title title of comic
 	 */
 	public String getTitle() {
-		return title;
+		return this.title;
 	}
 
 	/**Returns the order number of comic
@@ -33,7 +33,7 @@ public class ComicData {
 	 * @return issueNumber the order number on the comic
 	 */
 	public int getIssueNumber() {
-		return issueNumber;
+		return this.issueNumber;
 	}
 	
 	/**Returns toString of Comic
@@ -41,7 +41,7 @@ public class ComicData {
 	 * @return title and serial number
 	 */
 	public String toString() {
-		return this.title + " " + issueNumber;
+		return this.title + " " + this.issueNumber;
 	}
 
 }
