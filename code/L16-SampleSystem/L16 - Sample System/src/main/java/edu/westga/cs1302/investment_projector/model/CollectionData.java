@@ -2,6 +2,7 @@ package edu.westga.cs1302.investment_projector.model;
 
 import java.util.ArrayList;
 
+
 /** Stores information for a Student
  * 
  * @author CS 1302
@@ -16,7 +17,8 @@ public class CollectionData {
 			throw new IllegalArgumentException("Can't be null or empty");
 		}
 		this.name = name;
-		this.comics = comics;
+		this.comics = new ArrayList<ComicData>();
+
 	}
 
 	public String getName() {

@@ -17,5 +17,9 @@ public class ComicData {
 	public int getIssueNumber() {
 		return issueNumber;
 	}
+	
+	public String toString() {
+		return this.title + " " + issueNumber;
+	}
 
 }

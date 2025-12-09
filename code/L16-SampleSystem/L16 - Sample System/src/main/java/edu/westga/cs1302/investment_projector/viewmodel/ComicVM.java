@@ -27,16 +27,20 @@ public class ComicVM {
 		return this.title;
 	}
 
+	public IntegerProperty getIssueNumber() {
+		return issueNumber;
+	}
+
 	public ListProperty<ComicData> getComics() {
 		return this.comics;
 	}
 	
-	public void addName() {
+	public void addComic() {
 		ComicData addedComic = new ComicData(this.title.get(), this.issueNumber.get());
 		this.comics.add(addedComic);
 	}
 	
-	public void removeName(ComicData removedComic) {
+	public void removeComic(ComicData removedComic) {
 		this.comics.remove(removedComic);
 	}
 

@@ -20,9 +20,6 @@ public class MainWindow {
     @FXML private TextField name;
     @FXML private Button addingName;
     @FXML private Button removingName;
-    @FXML private Button addingComic;
-    @FXML private Button removingComic;
-    @FXML private ListView<?> comics;
     
     private CollectionVM vm;
     
