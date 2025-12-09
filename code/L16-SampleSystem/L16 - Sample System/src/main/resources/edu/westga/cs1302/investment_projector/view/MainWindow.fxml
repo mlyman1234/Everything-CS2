@@ -8,7 +8,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane minHeight="298.0" minWidth="340.0" prefHeight="463.0" prefWidth="490.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.westga.cs1302.investment_projector.view.MainWindow">
+<AnchorPane minHeight="298.0" minWidth="250.0" prefHeight="463.0" prefWidth="278.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.westga.cs1302.investment_projector.view.MainWindow">
    <children>
       <TextField fx:id="name" layoutX="48.0" layoutY="51.0" />
       <Button fx:id="addingName" layoutX="92.0" layoutY="90.0" mnemonicParsing="false" text="Add Name" />
@@ -24,9 +24,5 @@
       <Button fx:id="removingName" layoutX="80.0" layoutY="386.0" mnemonicParsing="false" text="Remove Name" />
       <Label layoutX="83.0" layoutY="24.0" text="Collection Name" />
       <Label layoutX="92.0" layoutY="148.0" text="Collections" />
-      <ListView fx:id="comics" layoutX="270.0" layoutY="175.0" prefHeight="200.0" prefWidth="200.0" />
-      <Button fx:id="addingComic" layoutX="327.0" layoutY="90.0" mnemonicParsing="false" text="Add Comic" />
-      <Button fx:id="removingComic" layoutX="315.0" layoutY="386.0" mnemonicParsing="false" text="Remove Comic" />
-      <Label layoutX="348.0" layoutY="148.0" text="Comics" />
    </children>
 </AnchorPane>

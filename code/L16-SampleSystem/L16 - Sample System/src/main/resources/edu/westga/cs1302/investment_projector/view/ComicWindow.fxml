@@ -10,13 +10,13 @@
 
 <AnchorPane minHeight="298.0" minWidth="340.0" prefHeight="463.0" prefWidth="449.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.westga.cs1302.investment_projector.view.ComicWindow">
    <children>
-      <TextField fx:id="titleTextField" layoutX="48.0" layoutY="51.0" />
-      <Button fx:id="removeComic" layoutX="195.0" layoutY="363.0" mnemonicParsing="false" text="Remove Comic" />
-      <Label layoutX="116.0" layoutY="24.0" text="Title" />
-      <Button fx:id="addingComic" layoutX="202.0" layoutY="88.0" mnemonicParsing="false" text="Add Comic" />
+      <TextField fx:id="titleTextField" layoutX="22.0" layoutY="51.0" />
+      <Button fx:id="removeComic" layoutX="169.0" layoutY="353.0" mnemonicParsing="false" text="Remove Comic" />
+      <Label layoutX="82.0" layoutY="24.0" text="Title" />
+      <Button fx:id="addingComic" layoutX="181.0" layoutY="88.0" mnemonicParsing="false" text="Add Comic" />
       <Label layoutX="306.0" layoutY="24.0" text="Issue Number" />
       <TextField fx:id="issueTextField" layoutX="262.0" layoutY="51.0" />
-      <ListView fx:id="listOfComics" layoutX="151.0" layoutY="163.0" prefHeight="200.0" prefWidth="200.0">
+      <ListView fx:id="listOfComics" layoutX="125.0" layoutY="132.0" prefHeight="200.0" prefWidth="200.0">
          <contextMenu>
             <ContextMenu>
               <items>
@@ -25,6 +25,5 @@
             </ContextMenu>
          </contextMenu>
       </ListView>
-      <Button fx:id="cancelComic" layoutX="180.0" layoutY="133.0" mnemonicParsing="false" text="Cancel Add Comic" />
    </children>
 </AnchorPane>
