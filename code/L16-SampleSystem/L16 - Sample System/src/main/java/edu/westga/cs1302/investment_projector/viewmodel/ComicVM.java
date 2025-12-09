@@ -1,26 +1,21 @@
 package edu.westga.cs1302.investment_projector.viewmodel;
 
-import java.util.ArrayList;
 
 import edu.westga.cs1302.investment_projector.model.CollectionData;
 import edu.westga.cs1302.investment_projector.model.ComicData;
 import javafx.beans.property.IntegerProperty;
-import javafx.beans.property.ListProperty;
 import javafx.beans.property.SimpleIntegerProperty;
-import javafx.beans.property.SimpleListProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
-import javafx.collections.FXCollections;
 
 public class ComicVM {
 	private StringProperty title;
 	private IntegerProperty issueNumber;
-	private ListProperty<ComicData> comics;
+	private CollectionData collection;
 
 	public ComicVM() {
 		this.title = new SimpleStringProperty("");
 		this.issueNumber = new SimpleIntegerProperty();
-		this.comics = new SimpleListProperty<ComicData>(FXCollections.observableArrayList(new ArrayList<ComicData>()));
 	}
 
 	public StringProperty getTitle() {
@@ -30,22 +25,19 @@ public class ComicVM {
 	public IntegerProperty getIssueNumber() {
 		return issueNumber;
 	}
-
-	public ListProperty<ComicData> getComics() {
-		return this.comics;
+	
+	public CollectionData getCollection() {
+		return collection;
+	}
+	
+	public void setCollection(CollectionData data) {
+		this.collection = data;
 	}
 	
 	public void addComic() {
 		ComicData addedComic = new ComicData(this.title.get(), this.issueNumber.get());
-		this.comics.add(addedComic);
+		this.collection.getComics().add(addedComic);		
 	}
-	
-	public void removeComic(ComicData removedComic) {
-		this.comics.remove(removedComic);
-	}
-
-	
-	
 
 }
 

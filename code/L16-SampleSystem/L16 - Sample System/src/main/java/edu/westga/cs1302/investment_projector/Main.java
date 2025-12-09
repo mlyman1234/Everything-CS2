@@ -16,6 +16,8 @@ import javafx.stage.Stage;
 public class Main extends Application {
 	private static final String WINDOW_TITLE = "Investment Projector";
 	private static final String GUI_RESOURCE = "view/MainWindow.fxml";
+	public static final String COMIC_WINDOW_RESOURCE = "view/ComicWindow.fxml";
+
 
 	/**
 	 * JavaFX entry point.
