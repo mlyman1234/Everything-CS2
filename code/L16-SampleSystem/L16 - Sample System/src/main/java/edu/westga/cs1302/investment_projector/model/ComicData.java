@@ -41,7 +41,7 @@ public class ComicData {
 	 * @return title and serial number
 	 */
 	public String toString() {
-		return this.title + " " + this.issueNumber;
+		return this.title + ", " + this.issueNumber;
 	}
 
 }

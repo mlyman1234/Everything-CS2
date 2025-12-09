@@ -1,3 +1,11 @@
+commit f63d1767d48e9be55059be9c04dfb098acaaee3d
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Tue Dec 9 08:32:41 2025 -0500
+
+    A – View for Finding a Comic by Title/Issue Number
+    
+    Made a new view class and fxml file for the SearchComic class that will be made
+
 commit cbf50e4b070fbdc78c823948ab31058773f3df0d
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Tue Dec 9 01:12:12 2025 -0500
