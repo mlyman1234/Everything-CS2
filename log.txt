@@ -1,3 +1,11 @@
+commit 7c1c8b5e8e227855f1858c9c2177e2cb28700f5d
+Author: mlyman1234 <mlyman1@my.westga.edu>
+Date:   Tue Dec 9 08:42:01 2025 -0500
+
+    B – Model for Finding a Comic by Title/Issue Number
+    
+    Added a toString to the model class for comic class
+
 commit f63d1767d48e9be55059be9c04dfb098acaaee3d
 Author: mlyman1234 <mlyman1@my.westga.edu>
 Date:   Tue Dec 9 08:32:41 2025 -0500

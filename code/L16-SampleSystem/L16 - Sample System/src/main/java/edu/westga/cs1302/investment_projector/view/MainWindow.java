@@ -38,7 +38,6 @@ public class MainWindow {
     
     @FXML
     void initalize() {
-    	this.vm = new CollectionVM();
         this.vm.getName().bind(this.name.textProperty());
 		this.collectionOfNames.setItems(this.vm.getCollection());
 
